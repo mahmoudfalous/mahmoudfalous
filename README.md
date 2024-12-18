@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/Mahmoud-Mohmed-1/Mahmoud-Mohmed-1/raw/f152c5a6ae71d7e68a9d3d7870bf35d873ee5b20/Black.jpg" alt="Mahmoud Mohamed Profile Photo" style="border-radius: 50%;" width="300" height="300" />
+</p>
 <h1 align="center">Hi 👋, I'm Mahmoud Mohamed</h1>
 <h3 align="center">A passionate Frontend Developer specializing in React.js, with experience in competitive programming and growing expertise in Backend development using Ruby on Rails</h3>
 
