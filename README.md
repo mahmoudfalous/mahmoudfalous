@@ -20,8 +20,8 @@
 <p align="left">
 <a href="https://twitter.com/MahmoudFalous" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="mahmoudfalous" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/mahmoud-falous-872897289" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mahmoud-falous-872897289" height="30" width="40" /></a>
-<a href="[https://fb.com/M.a.N.o.2.5.1.6](https://www.facebook.com/M.a.N.o.2.5.0.1?mibextid=ZbWKwL)" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="m.a.n.o.2.5.1.6" height="30" width="40" /></a>
-<a href="[https://instagram.com/M.a.N.o.2.5.1.6](https://www.instagram.com/m.a.n.o.2.5.0.1/profilecard/?igsh=MXI2a2pkenBmeDI3dA==)" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="m.a.n.o.2.5.1.6" height="30" width="40" /></a>
+<a href="=https://www.facebook.com/M.a.N.o.2.5.0.1?mibextid=ZbWKwL" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="m.a.n.o.2.5.1.6" height="30" width="40" /></a>
+<a href="https://www.instagram.com/m.a.n.o.2.5.0.1/profilecard/?igsh=MXI2a2pkenBmeDI3dA==" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="m.a.n.o.2.5.1.6" height="30" width="40" /></a>
 </p>
 
 ---
