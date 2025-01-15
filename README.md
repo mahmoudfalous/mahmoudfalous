@@ -12,7 +12,7 @@
 - 🤔 I’m also exploring *Competitive Programming* and participated in *ECPC 2024*
 - 💬 Ask me about *React, Ant Design, Tailwind CSS, and Ruby on Rails*
 - 📫 How to reach me *mahmoudfalous@gmail.com*
-- 📄 Check out my [Resume](https://drive.google.com/file/d/1MTHIdrToqUuyyG38EL_4VJjBaf4JEnd1/view?usp=sharing)
+- 📄 Check out my [Resume](https://drive.google.com/file/d/18s5wyALCVxdI-rYIV8_lEPSBNdm0olEp/view?usp=sharing)
 
 ---
 
@@ -60,3 +60,5 @@
 </ul>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=mahmoud-mohamed-3&show_icons=true&locale=en&layout=compact" alt="mahmoud-mohmed-1" /></p>
+
+<figure><embed src="https://wakatime.com/share/@MaNo001/249018c8-7c8f-4072-b100-761a919f10e1.svg"></embed></figure>
