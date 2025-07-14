@@ -6,11 +6,11 @@
 <p align="center" width="150px">A passionate full-stack developer in the making. Currently a Computer Science student and a developer at a startup, constantly learning and building powerful, scalable applications.</p>
 
 <p align="center"><b>Visitor's Count</b></p>
-<p align="center"><img src="https://profile-counter.glitch.me/{Mahmoud-Mohamed-3}/count.svg" alt="visitor badge"/></p>
+<p align="center"><img src="https://profile-counter.glitch.me/{mahmoudfalous}/count.svg" alt="visitor badge"/></p>
 
-<p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahmoud-Mohamed-3&layout=compact&theme=chartreuse-dark"></p>
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=Mahmoud-Mohamed-3&count_private=true&show_icons=true&theme=chartreuse-dark&include_all_commits=true" width="400"></p> 
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com?user=Mahmoud-Mohamed-3&theme=chartreuse-dark"></p>
+<p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoudfalous&layout=compact&theme=chartreuse-dark"></p>
+<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=mahmoudfalous&count_private=true&show_icons=true&theme=chartreuse-dark&include_all_commits=true" width="400"></p> 
+<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com?user=mahmoudfalous&theme=chartreuse-dark"></p>
 
 ---
 
