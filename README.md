@@ -1,30 +1,66 @@
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<p align="center"><img src="https://github.com/Mahmoud-Mohmed-1/Mahmoud-Mohmed-1/raw/f152c5a6ae71d7e68a9d3d7870bf35d873ee5b20/Black.jpg"></p>
-
-<h1 align="center">Hi <img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/Hi.gif" width="30px">, I am Mahmoud Mohamed</h1>
-
-<p align="center" width="150px">A passionate full-stack developer in the making. Currently a Computer Science student and a developer at a startup, constantly learning and building powerful, scalable applications.</p>
-
-<p align="center"><b>Visitor's Count</b></p>
-<p align="center"><img src="https://visitor-badge.laobi.icu/badge?page_id=mahmoudfalous.visitor-badge" alt="visitor badge"/></p>
-
-<p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoudfalous&layout=compact&theme=chartreuse-dark"></p>
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=mahmoudfalous&count_private=true&show_icons=true&theme=chartreuse-dark&include_all_commits=true" width="400"></p> 
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com?user=mahmoudfalous&theme=chartreuse-dark"></p>
-
----
-
-### 🛠️ Tech Stack
-
-![Ruby](https://img.shields.io/badge/-Ruby-05122A?style=flat&logo=ruby&logoColor=CC342D)&nbsp;![Rails](https://img.shields.io/badge/-Ruby%20on%20Rails-05122A?style=flat&logo=ruby-on-rails&logoColor=CC0000)&nbsp;![RSpec](https://img.shields.io/badge/-RSpec-05122A?style=flat&logo=ruby)&nbsp;![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript&logoColor=3178C6)&nbsp;![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=html5)&nbsp;![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3&logoColor=1572B6)&nbsp;
-![Sass](https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass&logoColor=CC6699)&nbsp;![Bootstrap](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap)&nbsp;![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-05122A?style=flat&logo=framer)&nbsp;![Ant Design](https://img.shields.io/badge/-Ant%20Design-05122A?style=flat&logo=ant-design&logoColor=0170FE)&nbsp;![Flutter](https://img.shields.io/badge/-Flutter-05122A?style=flat&logo=flutter)&nbsp;![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql&logoColor=4479A1)&nbsp;![Redis](https://img.shields.io/badge/-Redis-05122A?style=flat&logo=redis&logoColor=DC382D)&nbsp;![Sidekiq](https://img.shields.io/badge/-Sidekiq-05122A?style=flat&logo=ruby)&nbsp;![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;![VS Code](https://img.shields.io/badge/-VS%20Code-05122A?style=flat&logo=visual-studio-code)&nbsp;![Postman](https://img.shields.io/badge/-Postman-05122A?style=flat&logo=postman)&nbsp;![Figma](https://img.shields.io/badge/-Figma-05122A?style=flat&logo=figma)&nbsp;
-
----
-
-### :link: Connect with Me
+<h1 align="center">Mahmoud Mohamed <img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/Hi.gif" width="30px"></h1>
 
 <p align="center">
-<a href="mailto:mahmoudfalous@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=Gmail&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/mahmoud-mohamed-872897289"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"/></a>
-<a href="https://github.com/mahmoudfalous"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <img src="https://github.com/Mahmoud-Mohmed-1/Mahmoud-Mohmed-1/raw/f152c5a6ae71d7e68a9d3d7870bf35d873ee5b20/Black.jpg" width="200px" alt="Mahmoud Mohamed" style="border-radius:50%;">
 </p>
+
+<p align="center">
+  A Full-Stack Developer and Computer Science student based in Egypt 🇪🇬. I thrive on turning complex problems into elegant, scalable software solutions. Currently building cool things at a startup!
+</p>
+
+<h3 align="center">🔗 Let's Connect</h3>
+<p align="center">
+  <a href="https://github.com/mahmoudfalous"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/mahmoud-mohamed-872897289"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:mahmoudfalous@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
+</p>
+
+<h3 align="center">🚀 Currently Focusing On</h3>
+
+- 🔭 &nbsp; Building and scaling backend services with **Ruby on Rails**.
+- 🌱 &nbsp; Deepening my knowledge of **TypeScript** and modern **React** patterns.
+- 👯 &nbsp; Seeking to collaborate on open-source projects that make an impact.
+
+</td>
+<td width="50%" valign="top">
+
+## 💻 Tech Stack
+
+<table>
+  <tr>
+    <td align="center"><strong>Frontend</strong></td>
+    <td><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Backend</strong></td>
+    <td><img src="https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white" alt="Ruby on Rails"> <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" alt="Ruby"> <img src="https://img.shields.io/badge/Sidekiq-A60000?style=for-the-badge&logo=sidekiq&logoColor=white" alt="Sidekiq"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Mobile</strong></td>
+    <td><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Databases</strong></td>
+    <td><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"> <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Tools & Testing</strong></td>
+    <td><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"> <img src="https://img.shields.io/badge/RSpec-6C6C6C?style=for-the-badge&logo=ruby&logoColor=A5F23C" alt="RSpec"> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"> <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"></td>
+  </tr>
+</table>
+
+## 📊 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mahmoudfalous&count_private=true&show_icons=true&theme=chartreuse-dark&include_all_commits=true" alt="mahmoudfalous's GitHub Stats">
+  <br>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=mahmoudfalous&theme=chartreuse-dark" alt="mahmoudfalous's GitHub Streak">
+</p>
+
+</td>
+</tr>
+</table>
