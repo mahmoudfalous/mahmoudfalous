@@ -84,7 +84,7 @@
       <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoudfalous&layout=compact&theme=chartreuse-dark" alt="mahmoudfalous's Top Languages"></td>
     </tr>
   </table>
-<img src="https://github-readme-streak-stats.herokuapp.com?user=mahmoudfalous&theme=dark&hide_border=true&exclude_days=Sun%2CSat" alt="GitHub Streak">
+<img src="https://github-readme-streak-stats.herokuapp.com?user=mahmoudfalous&theme=chartreuse-dark&exclude_days=Sun%2CSat" alt="GitHub Streak" />
 </p>
 
 ---
