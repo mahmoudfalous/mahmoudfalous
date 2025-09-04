@@ -92,6 +92,16 @@
 
 ---
 
+## 🐍 Contribution Snake  
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mahmoudfalous/mahmoudfalous/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mahmoudfalous/mahmoudfalous/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/mahmoudfalous/mahmoudfalous/output/github-snake.svg" />
+</picture>
+
+---
+
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=mahmoudfalous&label=Profile%20Views&color=a4c639&style=flat-square" alt="Profile Views"/>
 </p>
