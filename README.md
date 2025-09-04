@@ -87,7 +87,7 @@
 ## 📈 Contribution Graph  
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahmoudfalous&bg_color=0D1117&color=00d4ff&line=00d4ff&point=ffffff&area=true&hide_border=true&custom_title=💻%20My%20Code%20Journey%20-%20Every%20Commit%20Tells%20a%20Story" alt="3D Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahmoudfalous&bg_color=0D1117&color=a5f23c&line=00d4ff&point=ffffff&area=true&hide_border=true&custom_title=💻%20My%20Code%20Journey%20-%20Every%20Commit%20Tells%20a%20Story" alt="Contribution Graph"/>
 </p>
 
 ---
