@@ -4,7 +4,7 @@
   <h1>Hi, I'm Mahmoud Mohamed <img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/Hi.gif" width="30px"></h1>
   
   <img src="https://github.com/Mahmoud-Mohmed-1/Mahmoud-Mohmed-1/raw/f152c5a6ae71d7e68a9d3d7870bf35d873ee5b20/Black.jpg" width="200px" alt="Mahmoud Mohamed" style="border-radius:50%; margin:20px 0;">
-  #description
+ <!-- #description -->
   <p>
     🚀 Full-Stack Developer & Computer Science Student from <b>Egypt 🇪🇬</b><br>
     I thrive on turning complex problems into elegant, scalable software solutions.
