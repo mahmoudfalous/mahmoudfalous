@@ -108,5 +108,6 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=mahmoudfalous&label=Profile%20Views&color=a4c639&style=flat-square" alt="Profile Views"/>
 </p>
-
+<p align="center">
 <a href="https://wakatime.com/@2038a4fa-65ac-4b15-8ce5-a2e0ccb2591a"><img src="https://wakatime.com/badge/user/2038a4fa-65ac-4b15-8ce5-a2e0ccb2591a.svg" alt="Total time coded since Nov 8 2024" /></a>
+</p>
