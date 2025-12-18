@@ -81,7 +81,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=mahmoudfalous&theme=chartreuse-dark&exclude_days=Sun%2CSat" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=mahmoudfalous&theme=chartreuse-dark&exclude_days=Sun%2CSat" alt="GitHub Streak" />
 </p>
 
 ---
