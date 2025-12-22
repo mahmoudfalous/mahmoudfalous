@@ -1,6 +1,5 @@
 <!-- Header -->
 
-
 <div align="center">
   <h1>Hi, I'm Mahmoud Mohamed <img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/Hi.gif" width="30px"></h1>
   
