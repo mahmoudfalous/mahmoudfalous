@@ -1,0 +1,36 @@
+name: Update Merged PR Count
+
+on:
+  schedule:
+    - cron: "0 0 * * 1" 
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch merged PR count
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          COUNT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+          "https://api.github.com/search/issues?q=is:pr+author:mahmoudfalous+is:merged&per_page=1" \
+          | jq '.total_count')
+
+          echo "MERGED_PRS=$COUNT" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          sed -i "s/{{MERGED_PRS}}/${MERGED_PRS}/g" README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "chore: update merged PR count" || echo "No changes to commit"
+          git push
