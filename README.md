@@ -52,7 +52,6 @@ I enjoy working on complex problems, collaborating with international teams, and
 
 ## 🌍 Open Source & Engineering Impact
 
-- 🔀 **Total Merged Pull Requests:** **3**
 - 🧠 Contributions across multiple repositories and teams
 - 🛠️ Focus on maintainability, refactoring, and real-world fixes
 - 🤝 Comfortable with code reviews, async communication, and CI workflows
