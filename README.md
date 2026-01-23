@@ -47,7 +47,7 @@
 </div>
 <div align="center">
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=mahmoudfalous&theme=github_dark" height="170" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mahmoudfalous&theme=github_dark&utcOffset=8" height="170" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mahmoudfalous&theme=github_dark&utcOffset=2" height="170" />
 </div>
 
 <br/>
