@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://github.com/Mahmoud-Mohmed-1/Mahmoud-Mohmed-1/raw/f152c5a6ae71d7e68a9d3d7870bf35d873ee5b20/Black.jpg" 
-       width="180" 
-       alt="Mahmoud Mohamed" 
-       style="border-radius:50%; margin-bottom: 20px; border: 4px solid #30363d;" />
+<img src="mano.jpg" 
+     width="180" 
+     alt="Mahmoud Mohamed" 
+     style="border-radius:50%; margin-bottom: 20px; border: 4px solid #30363d;" />
 
   <h1 style="border-bottom: none;">Hi, I'm Mahmoud Mohamed <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"></h1>
 
