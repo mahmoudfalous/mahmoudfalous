@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
@@ -16,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Generate Snake
@@ -33,11 +30,13 @@ jobs:
           mkdir -p dist
           echo "Last snake run: $(date)" > dist/last_snakerun.txt
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-          commit_message: last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit files to main
+        run: |
+          git config --global user.name "Mahmoud Mohamed"
+          git config --global user.email "mahmoudfalous@gmail.com"
+
+          git add dist
+
+          git commit -m "last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
+
+          git push
