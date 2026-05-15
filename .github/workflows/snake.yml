@@ -27,9 +27,9 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      # Force file change every run
       - name: Create timestamp file
         run: |
+          sudo chmod -R 777 dist || true
           mkdir -p dist
           echo "Last snake run: $(date)" > dist/last_snakerun.txt
 
