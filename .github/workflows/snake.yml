@@ -2,18 +2,22 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # runs every 6 hours
-  workflow_dispatch:         # allows manual trigger
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Generate Snake
         uses: Platane/snk@v3
@@ -23,10 +27,17 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
+      # Force file change every run
+      - name: Create timestamp file
+        run: |
+          mkdir -p dist
+          echo "Last snake run: $(date)" > dist/last_snakerun.txt
+
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          commit_message: last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
