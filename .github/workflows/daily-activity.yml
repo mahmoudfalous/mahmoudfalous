@@ -14,19 +14,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Update activity
-        run: |
-          echo "Last activity: $(date)" > activity.log
-
-      - name: Commit activity
+      - name: Commit daily activity
         run: |
           git config --global user.name "Mahmoud Mohamed"
           git config --global user.email "mahmoudfalous@gmail.com"
 
+          # Sync latest changes first
+          git pull --rebase origin main
+
+          # Append new activity
+          echo "Last activity: $(date)" >> activity.log
+
           git add activity.log
 
+          # Create commit
           git commit -m "daily_activity_$(date +'%Y-%m-%d')" || exit 0
 
-          git push
+          # Push to main
+          git push origin main
