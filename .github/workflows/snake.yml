@@ -48,13 +48,22 @@ jobs:
           git config --global user.name "Mahmoud Mohamed"
           git config --global user.email "mahmoudfalous@gmail.com"
 
-          # Sync before editing
+          # Save any temporary changes
+          git stash --include-untracked
+
+          # Get latest main
           git pull --rebase origin main
 
+          # Restore stashed files
+          git stash pop || true
+
+          # Update activity
           echo "Snake run at $(date)" >> activity.log
 
           git add activity.log
 
+          # Commit
           git commit -m "last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
 
+          # Push
           git push origin main
