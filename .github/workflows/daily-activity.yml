@@ -1,0 +1,32 @@
+name: Daily Activity
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  activity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update activity
+        run: |
+          echo "Last activity: $(date)" > activity.log
+
+      - name: Commit activity
+        run: |
+          git config --global user.name "Mahmoud Mohamed"
+          git config --global user.email "mahmoudfalous@gmail.com"
+
+          git add activity.log
+
+          git commit -m "daily_activity_$(date +'%Y-%m-%d')" || exit 0
+
+          git push
