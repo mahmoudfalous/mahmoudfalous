@@ -2,7 +2,7 @@ name: Daily Activity
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 */6 * * *"
 
   workflow_dispatch:
 
@@ -33,7 +33,7 @@ jobs:
           git add activity.log
 
           # Create commit
-          git commit -m "daily_activity_$(date +'%Y-%m-%d')" || exit 0
+          git commit -m "daily_activity_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
 
           # Push to main
           git push origin main
