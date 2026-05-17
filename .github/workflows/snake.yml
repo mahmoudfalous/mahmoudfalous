@@ -13,7 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Generate Snake
         uses: Platane/snk@v3
@@ -26,8 +29,10 @@ jobs:
       - name: Create timestamp
         run: |
           sudo chmod -R 777 dist || true
-          echo "$(date)" > dist/last_snakerun.txt
+          mkdir -p dist
+          echo "Last snake run: $(date)" > dist/last_snakerun.txt
 
+      # Push snake files to output branch
       - name: Push snake to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
@@ -36,3 +41,19 @@ jobs:
           commit_message: last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Create contribution commit on main
+      - name: Commit activity to main
+        run: |
+          git config --global user.name "Mahmoud Mohamed"
+          git config --global user.email "mahmoudfalous@gmail.com"
+
+          echo "Snake run at $(date)" >> activity.log
+
+          git add activity.log
+
+          git commit -m "last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
+
+          git pull --rebase origin main
+
+          git push origin main
