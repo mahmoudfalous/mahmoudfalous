@@ -32,7 +32,7 @@ jobs:
           mkdir -p dist
           echo "Last snake run: $(date)" > dist/last_snakerun.txt
 
-      # Push snake files to output branch
+      # Push snake SVGs to output branch
       - name: Push snake to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
@@ -48,12 +48,13 @@ jobs:
           git config --global user.name "Mahmoud Mohamed"
           git config --global user.email "mahmoudfalous@gmail.com"
 
+          # Sync before editing
+          git pull --rebase origin main
+
           echo "Snake run at $(date)" >> activity.log
 
           git add activity.log
 
           git commit -m "last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
-
-          git pull --rebase origin main
 
           git push origin main
