@@ -55,20 +55,7 @@
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mahmoudfalous&theme=github_dark&utcOffset=2" height="170" />
 </div>
 
-<br/>
 
-# ⏱️ Coding Activity
-
-<p align="center">
-  <i>Tracked with WakaTime</i>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=MaNo001&theme=github_dark&hide_border=true&layout=compact" />
-</p>
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
 
 <br/>
 
