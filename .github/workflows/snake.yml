@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   generate:
@@ -32,7 +33,6 @@ jobs:
           mkdir -p dist
           echo "Last snake run: $(date)" > dist/last_snakerun.txt
 
-      # Push snake SVGs to output branch
       - name: Push snake to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
@@ -42,28 +42,35 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Create contribution commit on main
-      - name: Commit activity to main
+      - name: Create change branch and commit activity
+        id: prep
         run: |
           git config --global user.name "Mahmoud Mohamed"
           git config --global user.email "mahmoudfalous@gmail.com"
 
-          # Save any temporary changes
-          git stash --include-untracked
+          BRANCH="snake-activity-$(date +'%Y-%m-%d_%H-%M-%S')"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
 
-          # Get latest main
-          git pull --rebase origin main
-
-          # Restore stashed files
-          git stash pop || true
-
-          # Update activity
-          echo "Snake run at $(date)" >> activity.log
-
+          git checkout -b "$BRANCH"
+          echo "Snake run at $(date -u)" >> activity.log
           git add activity.log
-
-          # Commit
           git commit -m "last_snakerun_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
+          git push origin "$BRANCH"
 
-          # Push
-          git push origin main
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.prep.outputs.branch }}
+          base: main
+          title: "last_snakerun_${{ github.run_id }}"
+          body: "Automated snake activity update."
+          delete-branch: true
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ steps.cpr.outputs.pull-request-number }}" --squash --auto --delete-branch
