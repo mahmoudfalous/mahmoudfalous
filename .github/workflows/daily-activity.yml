@@ -19,35 +19,46 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create change branch and commit
-        id: prep
+      - name: Configure Git
         run: |
           git config --global user.name "Mahmoud Mohamed"
           git config --global user.email "mahmoudfalous@gmail.com"
 
+      - name: Create branch and commit
+        id: prep
+        run: |
           BRANCH="daily-activity-$(date +'%Y-%m-%d_%H-%M-%S')"
+
           echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
 
           git checkout -b "$BRANCH"
+
           echo "Last activity: $(date -u)" >> activity.log
+
           git add activity.log
-          git commit -m "daily_activity_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
-          git push origin "$BRANCH"
 
-      - name: Create pull request
-        id: cpr
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.prep.outputs.branch }}
-          base: main
-          title: "daily_activity_${{ github.run_id }}"
-          body: "Automated daily activity update."
-          delete-branch: true
+          # Skip the rest if nothing changed
+          git diff --cached --quiet && echo "No changes" && exit 0
 
-      - name: Enable auto-merge
-        if: steps.cpr.outputs.pull-request-number != ''
+          git commit -m "daily_activity_$(date +'%Y-%m-%d_%H-%M-%S')"
+
+          git push --set-upstream origin "$BRANCH"
+
+      - name: Create Pull Request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr merge "${{ steps.cpr.outputs.pull-request-number }}" --squash --auto --delete-branch
+          gh pr create \
+            --base main \
+            --head "${{ steps.prep.outputs.branch }}" \
+            --title "Daily Activity #${{ github.run_number }}" \
+            --body "Automated daily activity update."
+
+      - name: Enable Auto Merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ steps.prep.outputs.branch }}" \
+            --squash \
+            --auto \
+            --delete-branch
