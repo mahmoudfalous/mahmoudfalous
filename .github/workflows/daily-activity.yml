@@ -3,11 +3,11 @@ name: Daily Activity
 on:
   schedule:
     - cron: "0 */6 * * *"
+
   workflow_dispatch:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   activity:
@@ -19,45 +19,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Configure Git
+      - name: Commit daily activity
         run: |
           git config --global user.name "Mahmoud Mohamed"
           git config --global user.email "mahmoudfalous@gmail.com"
 
-      - name: Create branch and commit
-        id: prep
-        run: |
-          BRANCH="daily-activity-$(date +'%Y-%m-%d_%H-%M-%S')"
+          # Sync latest changes first
+          git pull --rebase origin main
 
-          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
-
-          git checkout -b "$BRANCH"
-
-          echo "Last activity: $(date -u)" >> activity.log
+          # Append new activity
+          echo "Last activity: $(date)" >> activity.log
 
           git add activity.log
 
-          # Skip the rest if nothing changed
-          git diff --cached --quiet && echo "No changes" && exit 0
+          # Create commit
+          git commit -m "daily_activity_$(date +'%Y-%m-%d_%H-%M-%S')" || exit 0
 
-          git commit -m "daily_activity_$(date +'%Y-%m-%d_%H-%M-%S')"
-
-          git push --set-upstream origin "$BRANCH"
-
-      - name: Create Pull Request
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh pr create \
-            --base main \
-            --head "${{ steps.prep.outputs.branch }}" \
-            --title "Daily Activity #${{ github.run_number }}" \
-            --body "Automated daily activity update."
-
-      - name: Enable Auto Merge
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh pr merge "${{ steps.prep.outputs.branch }}" \
-              --squash \
-              --delete-branch
+          # Push to main
+          git push origin main
