@@ -162,10 +162,6 @@ Currently building full-stack applications using **Rails**, **Next.js**, and **F
   <img src="https://github-readme-streak-stats.herokuapp.com?user=mahmoudfalous&theme=github-dark-blue&hide_border=true" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mahmoudfalous&show_icons=true&theme=github_dark&hide_border=true" />
-</p>
-
 ---
 
 # 📫 Let's Connect
