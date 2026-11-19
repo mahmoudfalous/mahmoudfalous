@@ -167,9 +167,9 @@ for slug,kicker,title,detail in [
     ('contact-linkedin','KEEP IN TOUCH','LinkedIn','Connect with Mahmoud'),
 ]:
     b = text(26,30,kicker,10,'mono mint')
-    b += text(26,68,title,25,'bold') + text(418,65,'↗',25,'blue','text-anchor="end"')
+    b += text(26,68,title,25,'bold') + text(874,65,'↗',25,'blue','text-anchor="end"')
     b += text(26,99,detail,12,'muted')
-    save(slug,125,b,444,description=title+'. '+detail)
+    save(slug,125,b,description=title+'. '+detail)
 b = text(26,27,'BUILT FROM REAL GITHUB ACTIVITY',10,'mono mint')
 b += text(26,51,'Daily refresh  /  365-day window  /  Edge months partial  /  Reduced motion',11,'muted')
 save('footer',73,b,description='Public GitHub activity. Daily refresh. Rolling 365-day window, edge months partial. Reduced motion supported.')
