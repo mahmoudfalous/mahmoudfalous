@@ -17,15 +17,11 @@
 
 ### Selected work
 
-
 <a href="https://github.com/mahmoudfalous/eg-drugs"><img src="./cards/repo-eg-drugs.svg" width="100%" alt="eg-drugs: 44 GitHub stars" /></a>
-
 
 <a href="https://github.com/mahmoudfalous/pixel-bouquet"><img src="./cards/repo-pixel-bouquet.svg" width="100%" alt="pixel-bouquet: 6 GitHub stars" /></a>
 
-
 <a href="https://github.com/mahmoudfalous/wedding-invitation-"><img src="./cards/repo-wedding-invitation-.svg" width="100%" alt="wedding-invitation-: 3 GitHub stars" /></a>
-
 
 <!-- Contact section -->
 <a href="mailto:mahmoudfalous@gmail.com"><img src="./cards/contact-email.svg" width="100%" alt="Email Mahmoud: mahmoudfalous@gmail.com" /></a>
