@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-"""Refresh the public GitHub calendar. No token and no private repository access."""
+"""Refresh the public GitHub calendar and public repo list.\n\nAuthenticates the REST API calls with the workflow token when one is\nprovided (public data only), so the shared Actions runner IP does not\nhit the unauthenticated rate limit.\n"""
 import datetime as dt
 from html.parser import HTMLParser
 import json
+import os
 from pathlib import Path
 import re
+import time
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 USER = 'mahmoudfalous'
 SOURCE = f'https://github.com/users/{USER}/contributions'
+TOKEN = os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN')
 
 class Calendar(HTMLParser):
     def __init__(self):
@@ -35,6 +39,21 @@ class Calendar(HTMLParser):
                     self.counts[self.tip] = int(m.group(1).replace(',', ''))
             self.tip = None
 
+
+def fetch_json(url):
+    headers = {'User-Agent': 'mahmoudfalous-profile-cards'}
+    if TOKEN:
+        headers['Authorization'] = f'Bearer {TOKEN}'
+    for attempt in range(4):
+        try:
+            with urlopen(Request(url, headers=headers), timeout=45) as response:
+                return json.load(response)
+        except HTTPError as e:
+            if e.code in (403, 429) and attempt < 3:
+                time.sleep(15 * (attempt + 1))
+                continue
+            raise
+
 def main():
     req = Request(SOURCE, headers={'User-Agent': 'mahmoudfalous-profile-cards'})
     with urlopen(req, timeout=45) as response:
@@ -59,8 +78,7 @@ def main():
     repos = []
     for page in range(1, 11):
         url = f'https://api.github.com/users/{USER}/repos?type=owner&per_page=100&page={page}'
-        with urlopen(Request(url, headers={'User-Agent': 'mahmoudfalous-profile-cards'}), timeout=45) as response:
-            batch = json.load(response)
+        batch = fetch_json(url)
         repos.extend(batch)
         if len(batch) < 100:
             break
