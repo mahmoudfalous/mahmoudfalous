@@ -36,6 +36,8 @@ jobs:
           shutil.copyfile('new.jpeg', 'assets/new.jpeg')
           PYCODE
       - name: Refresh public calendar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch_contributions.py
       - name: Render animated cards
         run: python scripts/render_readme_cards.py
