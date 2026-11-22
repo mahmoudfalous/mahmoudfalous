@@ -17,7 +17,7 @@
 
 ### Selected work
 
-<a href="https://github.com/mahmoudfalous/eg-drugs"><img src="./cards/repo-eg-drugs.svg" width="100%" alt="eg-drugs: 44 GitHub stars" /></a>
+<a href="https://github.com/mahmoudfalous/eg-drugs"><img src="./cards/repo-eg-drugs.svg" width="100%" alt="eg-drugs: 45 GitHub stars" /></a>
 
 <a href="https://github.com/mahmoudfalous/pixel-bouquet"><img src="./cards/repo-pixel-bouquet.svg" width="100%" alt="pixel-bouquet: 6 GitHub stars" /></a>
 
