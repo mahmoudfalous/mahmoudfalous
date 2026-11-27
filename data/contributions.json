@@ -1,15 +1,10 @@
 {
   "username": "mahmoudfalous",
   "source": "https://github.com/users/mahmoudfalous/contributions",
-  "fetched_at": "2026-11-26T15:28:08.671218+00:00",
-  "start": "2025-11-27",
-  "end": "2026-11-26",
+  "fetched_at": "2026-11-27T15:19:02.942248+00:00",
+  "start": "2025-11-28",
+  "end": "2026-11-27",
   "days": [
-    {
-      "date": "2025-11-27",
-      "level": 1,
-      "count": 7
-    },
     {
       "date": "2025-11-28",
       "level": 1,
@@ -1827,6 +1822,11 @@
     },
     {
       "date": "2026-11-26",
+      "level": 1,
+      "count": 4
+    },
+    {
+      "date": "2026-11-27",
       "level": 1,
       "count": 2
     }
